@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1631B883696C75D2744F22E7 /* Pods_EosioReferenceWalletSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */; };
+		31F19C2FFE4BDD8186BA3B3F /* Pods_EosioReferenceWalletSignatureProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */; };
+		B46CC43622665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */; };
+		B46CC43B22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */; };
+		B46CC43D22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B46CC42F22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B46CCC292266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */; };
+		B46CCC2C22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CCC2A22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift */; };
+		B46CCC2D22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CCC2B22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift */; };
+		B46CCC2F2266646C006B7291 /* SecurityExclusions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CCC2E2266646C006B7291 /* SecurityExclusions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B46CC43722665DE4001790D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B46CC42322665DE4001790D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46CC42B22665DE4001790D8;
+			remoteInfo = EosioReferenceWalletSignatureProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProvider.release.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProvider/Pods-EosioReferenceWalletSignatureProvider.release.xcconfig"; sourceTree = "<group>"; };
+		3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig"; sourceTree = "<group>"; };
+		54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioReferenceWalletSignatureProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProvider/Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EosioReferenceWalletSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46CC42F22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EosioReferenceWalletSignatureProvider.h; sourceTree = "<group>"; };
+		B46CC43022665DE4001790D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EosioReferenceWalletSignatureProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EosioReferenceWalletSignatureProviderTests.swift; sourceTree = "<group>"; };
+		B46CC43C22665DE4001790D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EosioReferenceWalletSignatureProvider.swift; sourceTree = "<group>"; };
+		B46CCC2A22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift"; sourceTree = "<group>"; };
+		B46CCC2B22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EosioReferenceWalletSignatureProvider+Transactions.swift"; sourceTree = "<group>"; };
+		B46CCC2E2266646C006B7291 /* SecurityExclusions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityExclusions.swift; sourceTree = "<group>"; };
+		B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioReferenceWalletSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B46CC42922665DE4001790D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1631B883696C75D2744F22E7 /* Pods_EosioReferenceWalletSignatureProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46CC43222665DE4001790D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46CC43622665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework in Frameworks */,
+				31F19C2FFE4BDD8186BA3B3F /* Pods_EosioReferenceWalletSignatureProviderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926FED315BFF348394BD013B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */,
+				02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */,
+				54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */,
+				3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B46CC42222665DE4001790D8 = {
+			isa = PBXGroup;
+			children = (
+				B46CC42E22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */,
+				B46CC43922665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */,
+				B46CC42D22665DE4001790D8 /* Products */,
+				926FED315BFF348394BD013B /* Pods */,
+				B7A906F2AE788DF8E422E75B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B46CC42D22665DE4001790D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */,
+				B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B46CC42E22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */ = {
+			isa = PBXGroup;
+			children = (
+				B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */,
+				B46CCC2A22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift */,
+				B46CCC2B22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift */,
+				B46CC42F22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h */,
+				B46CCC2E2266646C006B7291 /* SecurityExclusions.swift */,
+				B46CC43022665DE4001790D8 /* Info.plist */,
+			);
+			path = EosioReferenceWalletSignatureProvider;
+			sourceTree = "<group>";
+		};
+		B46CC43922665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */,
+				B46CC43C22665DE4001790D8 /* Info.plist */,
+			);
+			path = EosioReferenceWalletSignatureProviderTests;
+			sourceTree = "<group>";
+		};
+		B7A906F2AE788DF8E422E75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */,
+				66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B46CC42722665DE4001790D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46CC43D22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProvider" */;
+			buildPhases = (
+				B0BCD7498E41A9C170B3A86D /* [CP] Check Pods Manifest.lock */,
+				B46CC42722665DE4001790D8 /* Headers */,
+				B46CC42822665DE4001790D8 /* Sources */,
+				B46CC42922665DE4001790D8 /* Frameworks */,
+				B46CC42A22665DE4001790D8 /* Resources */,
+				B461C5E52267747400C9EF16 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EosioReferenceWalletSignatureProvider;
+			productName = EosioReferenceWalletSignatureProvider;
+			productReference = B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B46CC43422665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProviderTests" */;
+			buildPhases = (
+				152BA8318CF57B12275A5180 /* [CP] Check Pods Manifest.lock */,
+				B46CC43122665DE4001790D8 /* Sources */,
+				B46CC43222665DE4001790D8 /* Frameworks */,
+				B46CC43322665DE4001790D8 /* Resources */,
+				593552C7E6084C855A1226B4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B46CC43822665DE4001790D8 /* PBXTargetDependency */,
+			);
+			name = EosioReferenceWalletSignatureProviderTests;
+			productName = EosioReferenceWalletSignatureProviderTests;
+			productReference = B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B46CC42322665DE4001790D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Block.One;
+				TargetAttributes = {
+					B46CC42B22665DE4001790D8 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					B46CC43422665DE4001790D8 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioReferenceWalletSignatureProvider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B46CC42222665DE4001790D8;
+			productRefGroup = B46CC42D22665DE4001790D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */,
+				B46CC43422665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B46CC42A22665DE4001790D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46CC43322665DE4001790D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		152BA8318CF57B12275A5180 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EosioReferenceWalletSignatureProviderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		593552C7E6084C855A1226B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/EosioSwift/EosioSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EosioSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BCD7498E41A9C170B3A86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EosioReferenceWalletSignatureProvider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B461C5E52267747400C9EF16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B46CC42822665DE4001790D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46CCC2F2266646C006B7291 /* SecurityExclusions.swift in Sources */,
+				B46CCC292266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift in Sources */,
+				B46CCC2D22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift in Sources */,
+				B46CCC2C22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46CC43122665DE4001790D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46CC43B22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B46CC43822665DE4001790D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */;
+			targetProxy = B46CC43722665DE4001790D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B46CC43E22665DE4001790D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B46CC43F22665DE4001790D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B46CC44122665DE4001790D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EosioReferenceWalletSignatureProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B46CC44222665DE4001790D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EosioReferenceWalletSignatureProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B46CC44422665DE4001790D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				INFOPLIST_FILE = EosioReferenceWalletSignatureProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B46CC44522665DE4001790D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				INFOPLIST_FILE = EosioReferenceWalletSignatureProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioReferenceWalletSignatureProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46CC43E22665DE4001790D8 /* Debug */,
+				B46CC43F22665DE4001790D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46CC44122665DE4001790D8 /* Debug */,
+				B46CC44222665DE4001790D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46CC44422665DE4001790D8 /* Debug */,
+				B46CC44522665DE4001790D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B46CC42322665DE4001790D8 /* Project object */;
+}
