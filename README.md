@@ -1,4 +1,4 @@
-# EOSIO wallet/signature provider example app ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
+# EOSIO SDK for Swift: iOS Reference wallet/signature provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/EOSIO/eosio-swift/blob/master/LICENSE)
 [![Swift 4.2](https://img.shields.io/badge/Language-Swift_4.2-orange.svg)](https://swift.org)
 ![](https://img.shields.io/badge/Deployment%20Target-iOS%2011-blue.svg)
@@ -8,7 +8,7 @@ The Signature Provider abstraction is arguably the most useful of all of the [EO
 * finding out what keys are available for signing (`getAvailableKeys`), and
 * requesting and obtaining transaction signatures with a subset of the available keys (`signTransaction`).
 
-By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature from keys in the platform's Keychain or Secure Enclave? [Configure the `EosioTransaction`](https://github.com/EOSIO/eosio-swift#basic-usage) with a conforming signature provider that exposes that functionality. Need signatures from a wallet on the user's device? A signature provider can do that too!
+By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature from keys in the platform's Keychain or Secure Enclave? Configure the `EosioTransaction` with a conforming signature provider that exposes that functionality. Need signatures from a wallet on the user's device? A signature provider can do that too!
 
 All signature providers must conform to the [EosioSignatureProviderProtocol](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioSignatureProviderProtocol/EosioSignatureProviderProtocol.swift) Protocol.
 
@@ -30,7 +30,7 @@ All signature providers must conform to the [EosioSignatureProviderProtocol](htt
 * For iOS, iOS 11+
 
 ## Installation
-This wallet/signature provider example app has [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) as a dependency.
+This reference wallet/signature provider has [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) as a dependency.
 
 1. Clone the library to your machine
 2. Navigate to the project folder using `Terminal`
