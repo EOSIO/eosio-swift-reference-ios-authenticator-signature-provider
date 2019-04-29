@@ -3,6 +3,8 @@ PODS:
     - SipHash (~> 1.2)
   - EosioSwift (0.0.2):
     - BigInt (~> 3.1)
+    - PromiseKit/CorePromise (~> 6.8)
+  - PromiseKit/CorePromise (6.8.4)
   - SipHash (1.2.2)
   - SwiftLint (0.31.0)
 
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BigInt
+    - PromiseKit
     - SipHash
     - SwiftLint
 
@@ -22,7 +25,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
-  EosioSwift: ee95140c19f0503d47c1373ea0380c75e58a499b
+  EosioSwift: 49f28fbbe00f383d2e9e357efc8007d137498f6f
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 

@@ -30,7 +30,7 @@ extension EosioReferenceWalletSignatureProvider {
 
         EosioReferenceWalletSignatureProvider.transactionSignatureCompletions[payload.id] = completion
 
-        // check that reutrn url is valid
+        // check that return url is valid
         guard isValid(url: returnUrl) else {
             return completion(EosioTransactionSignatureResponse(error: EosioError(.signatureProviderError, reason: "Return url is not valid")))
         }

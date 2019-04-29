@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'EosioReferenceWalletSignatureProvider'
   s.version          = '0.0.1'
-  s.summary          = 'Signature Provider for Eosio SDK for Swift that relays transactions to B1 Pass (Ref Wallet Implementation).'
+  s.summary          = 'Signature Provider for Eosio SDK for Swift that relays transactions to the EOSIO Reference Wallet Implementation.'
   s.homepage         = 'https://github.com/EOSIO/eosio-swift-reference-wallet-signature-provider'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
                            Copyright (c) 2017-2019 block.one and its contributors.  All rights reserved.
