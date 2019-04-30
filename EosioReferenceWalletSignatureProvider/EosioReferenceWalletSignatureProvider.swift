@@ -103,7 +103,7 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
 
         /// Initialize a request payload from a hexadecimal `String` representation.
         ///
-        /// - Parameter hex: Hexidecimal `String` representation of a `RequestPayload`.
+        /// - Parameter hex: Hexadecimal `String` representation of a `RequestPayload`.
         public init(hex: String) throws {
             guard let data = Data(hexString: hex) else {
                 throw EosioError(.signatureProviderError, reason: "Invalid request hex string")
