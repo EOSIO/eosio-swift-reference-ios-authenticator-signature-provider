@@ -74,14 +74,14 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
         public var selectiveDisclosure: SelectiveDisclosureRequest?
     }
 
-    /// Request Payload native struct
+    /// Request Payload native struct.
     /// - seealso: https://github.com/EOSIO/eosio-auth-transport-protocol-specification
     public struct RequestPayload: Codable {
-        /// The payload id.  Should be instance unique.
+        /// The payload ID.  Should be instance unique.
         public var id = UUID().uuidString
         /// The payload declared domain for domain matching checks.
         public var declaredDomain: String?
-        /// The paylod return URL.
+        /// The payload return URL.
         public var returnUrl = ""
         /// The payload call back URL.
         public var callbackUrl: String?
@@ -101,7 +101,7 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
 
         public init() { }
 
-        /// Initialize a request payload from a hexidecimal `String` representation.
+        /// Initialize a request payload from a hexadecimal `String` representation.
         ///
         /// - Parameter hex: Hexidecimal `String` representation of a `RequestPayload`.
         public init(hex: String) throws {
@@ -139,7 +139,7 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
 
         public init() { }
 
-        /// Initialize a response payload from a hexidecimal `String` representation.
+        /// Initialize a response payload from a hexadecimal `String` representation.
         ///
         /// - Parameter hex: Hexadecimal `String` representation of a `ResponsePayload`.
         public init(hex: String) throws {
