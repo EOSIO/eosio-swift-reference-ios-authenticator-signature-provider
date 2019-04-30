@@ -3,7 +3,7 @@
 //  EosioReferenceWalletSignatureProvider
 //
 //  Created by Todd Bowden on 11/12/18.
-//  Copyright (c) 2018-2019 block.one
+//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
 //
 
 import Foundation
@@ -26,7 +26,7 @@ extension EosioReferenceWalletSignatureProvider {
 
     /// Sign transaction implementation method.  Required to conform to `EosioSignatureProviderProtocol`.
     ///
-    /// - Parameter: request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference Wallet Implementation.
+    /// - Parameter request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference Wallet Implementation.
     /// - Parameter completion: The completion closure to be called with the `EosioTransactionSignatureResponse`.
     public func signTransaction(request: EosioTransactionSignatureRequest, completion: @escaping (EosioTransactionSignatureResponse) -> Void) {
 

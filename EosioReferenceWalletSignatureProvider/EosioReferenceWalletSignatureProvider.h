@@ -3,7 +3,7 @@
 //  EosioReferenceWalletSignatureProvider
 //
 //  Created by Steve McCoole on 4/16/19.
-//  Copyright © 2019 Block.One. All rights reserved.
+//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  EosioReferenceWalletSignatureProvider.swift
 //
 //  Created by Todd Bowden on 9/30/18.
-//  Copyright (c) 2018-2019 block.one
+//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
 //
 
 import Foundation
@@ -21,15 +21,15 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
     /// Singleton instance of the `EosioReferenceWalletSignatureProvider`.
     public static let shared = EosioReferenceWalletSignatureProvider()
 
-    /// Map of the current completion closures for transaction signatures, keyed by the incoming payload Id.
+    /// Map of the current completion closures for transaction signatures, keyed by the incoming payload ID.
     static var transactionSignatureCompletions = [String: ((EosioTransactionSignatureResponse) -> Void)]()
 
-    /// Map of the current completion closures for selective disclosure requests, keyed by the incoming payload Id.
+    /// Map of the current completion closures for selective disclosure requests, keyed by the incoming payload ID.
     static var selectiveDisclosureCompletions = [String: ((SelectiveDisclosureResponse) -> Void)]()
 
     /// Handle an incoming request from a Universal Link.
     ///
-    /// - Parameter userActivity: current application state as `NSUserActivity`.
+    /// - Parameter userActivity: Current application state as `NSUserActivity`.
     public static func handleIncoming(userActivity: NSUserActivity) {
         guard let url = userActivity.webpageURL else { return }
         handleIncoming(url: url)
@@ -118,16 +118,16 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
     public struct Response: Codable {
         /// If set, the returned response is a transaction signature response.
         public var transactionSignature: EosioTransactionSignatureResponse?
-        /// if set, the returned response is a selective disclosure response.
+        /// If set, the returned response is a selective disclosure response.
         public var selectiveDisclosure: SelectiveDisclosureResponse?
     }
 
-    /// Response Payload native struct
+    /// Response Payload native struct.
     /// - seealso: https://github.com/EOSIO/eosio-auth-transport-protocol-specification
     public struct ResponsePayload: Codable {
-        /// The response payload id.  Copied from the incoming request.
+        /// The response payload ID.  Copied from the incoming request.
         public var id = ""
-        /// The device id that processed the request.
+        /// The device ID that processed the request.
         public var deviceId = ""
         /// The actual response to be returned.
         public var response = Response()
@@ -141,7 +141,7 @@ public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtoc
 
         /// Initialize a response payload from a hexidecimal `String` representation.
         ///
-        /// - Parameter hex: Hexidecimal `String` representation of a `ResponsePayload`.
+        /// - Parameter hex: Hexadecimal `String` representation of a `ResponsePayload`.
         public init(hex: String) throws {
             guard let data = Data(hexString: hex) else {
                 throw EosioError(.signatureProviderError, reason: "Invalid response hex string")
