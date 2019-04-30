@@ -3,15 +3,18 @@
 //  EosioReferenceWalletSignatureProvider
 //
 //  Created by Todd Bowden on 11/12/18.
-//  Copyright (c) 2018-2019 block.one
+//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
 //
 
 import Foundation
 import EosioSwift
 
+/// Extensions to `EosioReferenceWalletSignatureProvider` to add transaction signature functionality.
 extension EosioReferenceWalletSignatureProvider {
 
-    // handle transactions in the payload 
+    /// Handle transaction signature requests in the payload.
+    ///
+    /// - Parameter payload: The transaction signature `ResponsePayload`.
     public static func handleIncomingTransactionSignature(payload: ResponsePayload) {
         guard let completion = transactionSignatureCompletions[payload.id] else { return }
         transactionSignatureCompletions[payload.id] = nil
@@ -21,7 +24,10 @@ extension EosioReferenceWalletSignatureProvider {
         }
     }
 
-    // Signature provider protocol method
+    /// Sign transaction implementation method.  Required to conform to `EosioSignatureProviderProtocol`.
+    ///
+    /// - Parameter request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference Wallet Implementation.
+    /// - Parameter completion: The completion closure to be called with the `EosioTransactionSignatureResponse`.
     public func signTransaction(request: EosioTransactionSignatureRequest, completion: @escaping (EosioTransactionSignatureResponse) -> Void) {
 
         var payload = RequestPayload()
