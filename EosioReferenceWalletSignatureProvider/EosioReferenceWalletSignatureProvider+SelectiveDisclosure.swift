@@ -145,7 +145,7 @@ extension EosioReferenceWalletSignatureProvider {
         }
     }
 
-    // Mark: - Local Cache Functions
+    // MARK: - Local Cache Functions
 
     /// Clear the authorizers in the local cache.
     public func clearAuthorizers() throws {
