@@ -9,7 +9,7 @@
 import XCTest
 import EosioSwift
 
-@testable import EosioReferenceWalletSignatureProvider
+@testable import EosioSwiftReferenceAuthenticatorSignatureProvider
 
 // swiftlint:disable line_length
 class EosioReferenceWalletSignatureProviderTests: XCTestCase {

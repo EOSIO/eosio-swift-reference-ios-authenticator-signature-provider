@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B46CC43422665DE4001790D8"
-               BuildableName = "EosioReferenceWalletSignatureProviderTests.xctest"
-               BlueprintName = "EosioReferenceWalletSignatureProviderTests"
-               ReferencedContainer = "container:EosioReferenceWalletSignatureProvider.xcodeproj">
+               BuildableName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest"
+               BlueprintName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests"
+               ReferencedContainer = "container:EosioSwiftReferenceAuthenticatorSignatureProvider.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B46CC43422665DE4001790D8"
-               BuildableName = "EosioReferenceWalletSignatureProviderTests.xctest"
-               BlueprintName = "EosioReferenceWalletSignatureProviderTests"
-               ReferencedContainer = "container:EosioReferenceWalletSignatureProvider.xcodeproj">
+               BuildableName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest"
+               BlueprintName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests"
+               ReferencedContainer = "container:EosioSwiftReferenceAuthenticatorSignatureProvider.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B46CC43422665DE4001790D8"
-            BuildableName = "EosioReferenceWalletSignatureProviderTests.xctest"
-            BlueprintName = "EosioReferenceWalletSignatureProviderTests"
-            ReferencedContainer = "container:EosioReferenceWalletSignatureProvider.xcodeproj">
+            BuildableName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest"
+            BlueprintName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests"
+            ReferencedContainer = "container:EosioSwiftReferenceAuthenticatorSignatureProvider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B46CC43422665DE4001790D8"
-            BuildableName = "EosioReferenceWalletSignatureProviderTests.xctest"
-            BlueprintName = "EosioReferenceWalletSignatureProviderTests"
-            ReferencedContainer = "container:EosioReferenceWalletSignatureProvider.xcodeproj">
+            BuildableName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest"
+            BlueprintName = "EosioSwiftReferenceAuthenticatorSignatureProviderTests"
+            ReferencedContainer = "container:EosioSwiftReferenceAuthenticatorSignatureProvider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
