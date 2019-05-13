@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1631B883696C75D2744F22E7 /* Pods_EosioReferenceWalletSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */; };
-		31F19C2FFE4BDD8186BA3B3F /* Pods_EosioReferenceWalletSignatureProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */; };
-		B46CC43622665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */; };
+		6938062D8B8DBC7946C6BE59 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D93664A8C7FAA2AE54E49CA /* Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework */; };
+		A93BCA046F9F7D04FD073C95 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EF2C8D7CCE4B48DEF6AEB3 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework */; };
+		B46CC43622665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46CC42C22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework */; };
 		B46CC43B22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */; };
 		B46CC43D22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B46CC42F22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B46CCC292266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */; };
@@ -29,22 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProvider.release.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProvider/Pods-EosioReferenceWalletSignatureProvider.release.xcconfig"; sourceTree = "<group>"; };
-		3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig"; sourceTree = "<group>"; };
-		54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioReferenceWalletSignatureProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig"; path = "Target Support Files/Pods-EosioReferenceWalletSignatureProvider/Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig"; sourceTree = "<group>"; };
-		B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EosioReferenceWalletSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1423466757CA230EB4C311 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.release.xcconfig"; path = "Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D93664A8C7FAA2AE54E49CA /* Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EF2C8D7CCE4B48DEF6AEB3 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CA70C5145E90B5B9D58E1E /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.release.xcconfig"; path = "Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProvider/Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.release.xcconfig"; sourceTree = "<group>"; };
+		A224C49CF6DBB96B91CC8D06 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.debug.xcconfig"; path = "Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProvider/Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		B46CC42C22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EosioSwiftReferenceAuthenticatorSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CC42F22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EosioReferenceWalletSignatureProvider.h; sourceTree = "<group>"; };
 		B46CC43022665DE4001790D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EosioReferenceWalletSignatureProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46CC43522665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EosioReferenceWalletSignatureProviderTests.swift; sourceTree = "<group>"; };
 		B46CC43C22665DE4001790D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EosioReferenceWalletSignatureProvider.swift; sourceTree = "<group>"; };
 		B46CCC2A22666224006B7291 /* EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift"; sourceTree = "<group>"; };
 		B46CCC2B22666224006B7291 /* EosioReferenceWalletSignatureProvider+Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EosioReferenceWalletSignatureProvider+Transactions.swift"; sourceTree = "<group>"; };
 		B46CCC2E2266646C006B7291 /* SecurityExclusions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityExclusions.swift; sourceTree = "<group>"; };
-		B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EosioReferenceWalletSignatureProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B499DE993B96197E2D0D5D9F /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1631B883696C75D2744F22E7 /* Pods_EosioReferenceWalletSignatureProvider.framework in Frameworks */,
+				6938062D8B8DBC7946C6BE59 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46CC43622665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework in Frameworks */,
-				31F19C2FFE4BDD8186BA3B3F /* Pods_EosioReferenceWalletSignatureProviderTests.framework in Frameworks */,
+				B46CC43622665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework in Frameworks */,
+				A93BCA046F9F7D04FD073C95 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,10 +71,10 @@
 		926FED315BFF348394BD013B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */,
-				02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */,
-				54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */,
-				3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */,
+				A224C49CF6DBB96B91CC8D06 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.debug.xcconfig */,
+				83CA70C5145E90B5B9D58E1E /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.release.xcconfig */,
+				B499DE993B96197E2D0D5D9F /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.debug.xcconfig */,
+				3E1423466757CA230EB4C311 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -82,8 +82,8 @@
 		B46CC42222665DE4001790D8 = {
 			isa = PBXGroup;
 			children = (
-				B46CC42E22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */,
-				B46CC43922665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */,
+				B46CC42E22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider */,
+				B46CC43922665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests */,
 				B46CC42D22665DE4001790D8 /* Products */,
 				926FED315BFF348394BD013B /* Pods */,
 				B7A906F2AE788DF8E422E75B /* Frameworks */,
@@ -93,13 +93,13 @@
 		B46CC42D22665DE4001790D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */,
-				B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */,
+				B46CC42C22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework */,
+				B46CC43522665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B46CC42E22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */ = {
+		B46CC42E22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider */ = {
 			isa = PBXGroup;
 			children = (
 				B46CCC282266613E006B7291 /* EosioReferenceWalletSignatureProvider.swift */,
@@ -109,23 +109,23 @@
 				B46CCC2E2266646C006B7291 /* SecurityExclusions.swift */,
 				B46CC43022665DE4001790D8 /* Info.plist */,
 			);
-			path = EosioReferenceWalletSignatureProvider;
+			path = EosioSwiftReferenceAuthenticatorSignatureProvider;
 			sourceTree = "<group>";
 		};
-		B46CC43922665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */ = {
+		B46CC43922665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests */ = {
 			isa = PBXGroup;
 			children = (
 				B46CC43A22665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.swift */,
 				B46CC43C22665DE4001790D8 /* Info.plist */,
 			);
-			path = EosioReferenceWalletSignatureProviderTests;
+			path = EosioSwiftReferenceAuthenticatorSignatureProviderTests;
 			sourceTree = "<group>";
 		};
 		B7A906F2AE788DF8E422E75B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8D0E10C096685F9E879B33A /* Pods_EosioReferenceWalletSignatureProvider.framework */,
-				66AE7CE3D546CD410ACD5EDE /* Pods_EosioReferenceWalletSignatureProviderTests.framework */,
+				5D93664A8C7FAA2AE54E49CA /* Pods_EosioSwiftReferenceAuthenticatorSignatureProvider.framework */,
+				65EF2C8D7CCE4B48DEF6AEB3 /* Pods_EosioSwiftReferenceAuthenticatorSignatureProviderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */ = {
+		B46CC42B22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProvider" */;
+			buildConfigurationList = B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioSwiftReferenceAuthenticatorSignatureProvider" */;
 			buildPhases = (
 				B0BCD7498E41A9C170B3A86D /* [CP] Check Pods Manifest.lock */,
 				B46CC42722665DE4001790D8 /* Headers */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = EosioReferenceWalletSignatureProvider;
+			name = EosioSwiftReferenceAuthenticatorSignatureProvider;
 			productName = EosioReferenceWalletSignatureProvider;
-			productReference = B46CC42C22665DE4001790D8 /* EosioReferenceWalletSignatureProvider.framework */;
+			productReference = B46CC42C22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B46CC43422665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */ = {
+		B46CC43422665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProviderTests" */;
+			buildConfigurationList = B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioSwiftReferenceAuthenticatorSignatureProviderTests" */;
 			buildPhases = (
 				152BA8318CF57B12275A5180 /* [CP] Check Pods Manifest.lock */,
 				B46CC43122665DE4001790D8 /* Sources */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				B46CC43822665DE4001790D8 /* PBXTargetDependency */,
 			);
-			name = EosioReferenceWalletSignatureProviderTests;
+			name = EosioSwiftReferenceAuthenticatorSignatureProviderTests;
 			productName = EosioReferenceWalletSignatureProviderTests;
-			productReference = B46CC43522665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests.xctest */;
+			productReference = B46CC43522665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioReferenceWalletSignatureProvider" */;
+			buildConfigurationList = B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioSwiftReferenceAuthenticatorSignatureProvider" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,8 +215,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */,
-				B46CC43422665DE4001790D8 /* EosioReferenceWalletSignatureProviderTests */,
+				B46CC42B22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider */,
+				B46CC43422665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProviderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EosioReferenceWalletSignatureProviderTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,7 +269,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/EosioSwift/EosioSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
@@ -286,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EosioReferenceWalletSignatureProviderTests/Pods-EosioReferenceWalletSignatureProviderTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests/Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0BCD7498E41A9C170B3A86D /* [CP] Check Pods Manifest.lock */ = {
@@ -304,7 +304,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EosioReferenceWalletSignatureProvider-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EosioSwiftReferenceAuthenticatorSignatureProvider-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,7 +355,7 @@
 /* Begin PBXTargetDependency section */
 		B46CC43822665DE4001790D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B46CC42B22665DE4001790D8 /* EosioReferenceWalletSignatureProvider */;
+			target = B46CC42B22665DE4001790D8 /* EosioSwiftReferenceAuthenticatorSignatureProvider */;
 			targetProxy = B46CC43722665DE4001790D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -487,7 +487,7 @@
 		};
 		B46CC44122665DE4001790D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7697BE322379586427A86724 /* Pods-EosioReferenceWalletSignatureProvider.debug.xcconfig */;
+			baseConfigurationReference = A224C49CF6DBB96B91CC8D06 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -497,14 +497,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EosioReferenceWalletSignatureProvider/Info.plist;
+				INFOPLIST_FILE = EosioSwiftReferenceAuthenticatorSignatureProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioSwiftReferenceAuthenticatorSignatureProvider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -515,7 +515,7 @@
 		};
 		B46CC44222665DE4001790D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02F384E02AC9F0F92F9FD3EF /* Pods-EosioReferenceWalletSignatureProvider.release.xcconfig */;
+			baseConfigurationReference = 83CA70C5145E90B5B9D58E1E /* Pods-EosioSwiftReferenceAuthenticatorSignatureProvider.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -525,14 +525,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = EosioReferenceWalletSignatureProvider/Info.plist;
+				INFOPLIST_FILE = EosioSwiftReferenceAuthenticatorSignatureProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioSwiftReferenceAuthenticatorSignatureProvider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -542,18 +542,18 @@
 		};
 		B46CC44422665DE4001790D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54F530C145B6A3743255B447 /* Pods-EosioReferenceWalletSignatureProviderTests.debug.xcconfig */;
+			baseConfigurationReference = B499DE993B96197E2D0D5D9F /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9574LUMBYJ;
-				INFOPLIST_FILE = EosioReferenceWalletSignatureProviderTests/Info.plist;
+				INFOPLIST_FILE = EosioSwiftReferenceAuthenticatorSignatureProviderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProviderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioSwiftReferenceAuthenticatorSignatureProviderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -562,18 +562,18 @@
 		};
 		B46CC44522665DE4001790D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CAF956B72FDA10996F99095 /* Pods-EosioReferenceWalletSignatureProviderTests.release.xcconfig */;
+			baseConfigurationReference = 3E1423466757CA230EB4C311 /* Pods-EosioSwiftReferenceAuthenticatorSignatureProviderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9574LUMBYJ;
-				INFOPLIST_FILE = EosioReferenceWalletSignatureProviderTests/Info.plist;
+				INFOPLIST_FILE = EosioSwiftReferenceAuthenticatorSignatureProviderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioReferenceWalletSignatureProviderTests;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.EosioSwiftReferenceAuthenticatorSignatureProviderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioReferenceWalletSignatureProvider" */ = {
+		B46CC42622665DE4001790D8 /* Build configuration list for PBXProject "EosioSwiftReferenceAuthenticatorSignatureProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B46CC43E22665DE4001790D8 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProvider" */ = {
+		B46CC44022665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioSwiftReferenceAuthenticatorSignatureProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B46CC44122665DE4001790D8 /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioReferenceWalletSignatureProviderTests" */ = {
+		B46CC44322665DE4001790D8 /* Build configuration list for PBXNativeTarget "EosioSwiftReferenceAuthenticatorSignatureProviderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B46CC44422665DE4001790D8 /* Debug */,
