@@ -1,4 +1,4 @@
-# EOSIO SDK for Swift: iOS Reference wallet/signature provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
+# EOSIO SDK for Swift: iOS Reference authenticator/signature provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/EOSIO/eosio-swift/blob/master/LICENSE)
 [![Swift 4.2](https://img.shields.io/badge/Language-Swift_4.2-orange.svg)](https://swift.org)
 ![](https://img.shields.io/badge/Deployment%20Target-iOS%2011-blue.svg)
@@ -30,22 +30,22 @@ All signature providers must conform to the [EosioSignatureProviderProtocol](htt
 * For iOS, iOS 11+
 
 ## Installation
-This reference wallet/signature provider has [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) as a dependency.
+This reference authenticator/signature provider has [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) as a dependency.
 
 1. Clone the library to your machine
 2. Navigate to the project folder using `Terminal`
 3. Run `pod install`
-4. Open newly created file `EosioReferenceWalletSignatureProvider.xcworkspace`
+4. Open newly created file `EosioSwiftReferenceAuthenticatorSignatureProvider.xcworkspace`
 
 ## Basic Usage
 
-Kick off a signature request from Reference Wallet Implementation App by calling `signTransaction`.
-It will use [deep link](https://developer.apple.com/ios/universal-links/) communication channel to activate the Reference Wallet Implementation App and pass the transaction details.
-Once the transaction is signed by Reference Wallet Implementation App, it will kick back to your app and pass the transaction with signature(s).
+Kick off a signature request from Reference Authenticator Implementation App by calling `signTransaction`.
+It will use [deep link](https://developer.apple.com/ios/universal-links/) communication channel to activate the Reference Authenticator Implementation App and pass the transaction details.
+Once the transaction is signed by Reference Authenticator Implementation App, it will kick back to your app and pass the transaction with signature(s).
 You just need to listen to it at `didFinishLaunchingWithOptions` of your `AppDelegate` and consume it.
 ![Diagram](Img/diagram.png)
 
-**Note:** When you try to request signatues for the first time, the flow will be a little different. Your app will display a `selective disclosure` to the user asking for permission to request public keys from the Reference Wallet Implementation app.
+**Note:** When you try to request signatues for the first time, the flow will be a little different. Your app will display a `selective disclosure` to the user asking for permission to request public keys from the Reference Authenticator Implementation app.
 
 ## Want to help?
 
