@@ -1,4 +1,4 @@
-using_local_pods = true
+using_local_pods = false
 
 unless using_local_pods
   source 'https://github.com/EOSIO/eosio-swift-pod-specs.git'
@@ -6,6 +6,9 @@ unless using_local_pods
 end
 
 platform :ios, '11.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
 
 if using_local_pods
   # Pull pods from sibling directories if using local pods
@@ -25,12 +28,12 @@ else
   target 'EosioReferenceWalletSignatureProvider' do
     use_frameworks!
 
-    pod 'EosioSwift', '~> 0.0.2'
+    pod 'EosioSwift', '~> 0.0.3'
     pod 'SwiftLint'
 
     target 'EosioReferenceWalletSignatureProviderTests' do
       inherit! :search_paths
-      pod 'EosioSwift', '~> 0.0.2'
+      pod 'EosioSwift', '~> 0.0.3'
     end
   end
 end
