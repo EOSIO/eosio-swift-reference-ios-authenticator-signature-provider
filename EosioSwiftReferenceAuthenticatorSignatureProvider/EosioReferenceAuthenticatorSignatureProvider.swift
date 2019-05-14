@@ -69,7 +69,7 @@ public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProvide
     /// The incoming request structure to handle.
     public struct Request: Codable {
         /// If set, the incoming request is a transaction signature request.
-        public var transactionSignature: EosioTransactionSignatureRequest?
+        public var transactionSignature: TransactionSignatureRequest?
         /// If set, the incoming request is a selective disclosure request.
         public var selectiveDisclosure: SelectiveDisclosureRequest?
     }

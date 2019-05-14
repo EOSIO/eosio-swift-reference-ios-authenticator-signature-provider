@@ -24,6 +24,80 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         }
     }
 
+    /// The transaction signature request.
+    /// Conforms to the `transactionSignature` property of the protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
+    public struct TransactionSignatureRequest: Codable {
+        /// The transaction info containing any exisitng signatures, compression, packedContextFreeData and packedTrx.
+        public var transaction = Transaction()
+        /// The chain ID as a `String`.
+        public var chainId = ""
+        /// An array of public keys identifying the private keys with which the transaction should be signed.
+        public var publicKeys = [String]()
+        /// An array of `BinaryAbi`s sent along so that signature providers can display transaction information to the user.
+        public var abis = [BinaryAbi]()
+        /// Should the signature provider be allowed to modify the transaction? E.g., adding an assert action. Defaults to `true`.
+        public var isModificationAllowed = true
+
+        /// The structure for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`.
+        public struct Transaction: Codable { // swiftlint:disable:this nesting
+            /// The array of signatures
+            public var signatures = [String]()
+            /// The compression
+            public var compression = 0
+            /// The packed context free data
+            public var packedContextFreeData = ""
+            /// The packed trx
+            public var packedTrx = ""
+
+            /// Initializer for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`
+            /// - Parameters:
+            ///   - signatures: The array of signatures
+            ///   - compression: The compression
+            ///   - packedContextFreeData: The packed context free data
+            ///   - packedTrx: The packed trx
+            init(signatures: [String]? = nil, compression: Int? = 0, packedContextFreeData: String? = nil, packedTrx: String? = nil) {
+                self.signatures = signatures ?? [String]()
+                self.compression = compression ?? 0
+                self.packedContextFreeData = packedContextFreeData ?? ""
+                self.packedTrx = packedTrx ?? ""
+            }
+        }
+
+        /// The structure for `BinaryAbi`s.
+        public struct BinaryAbi: Codable { // swiftlint:disable:this nesting
+            /// The account name for the contract, as a `String`.
+            public var accountName = ""
+            /// The binary representation of the ABI as a `String`.
+            public var abi = ""
+            /// Initializer for the `BinaryAbi`.
+            public init() { }
+
+            /// Initializer for the `BinaryAbi`.
+            /// - Parameters:
+            ///   - accountName: The account name
+            ///   - abi: The abi as a hex string
+            public init(accountName: String, abi: String) {
+                self.accountName = accountName
+                self.abi = abi
+            }
+        }
+
+        /// Initializer for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest`.
+        public init() { }
+
+        /// Initializer for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest` with an `EosioTransactionSignatureRequest`
+        /// - Parameter eosioTransactionSignatureRequest: An `EosioTransactionSignatureRequest`.
+        public init(eosioTransactionSignatureRequest: EosioTransactionSignatureRequest) {
+            self.transaction = Transaction(packedTrx: eosioTransactionSignatureRequest.serializedTransaction.hex)
+            self.chainId = eosioTransactionSignatureRequest.chainId
+            self.publicKeys = eosioTransactionSignatureRequest.publicKeys
+            self.isModificationAllowed = eosioTransactionSignatureRequest.isModificationAllowed
+            self.abis = eosioTransactionSignatureRequest.abis.map({ (abi) -> TransactionSignatureRequest.BinaryAbi in
+                return TransactionSignatureRequest.BinaryAbi(accountName: abi.accountName, abi: abi.abi)
+            })
+        }
+    }
+
     /// Sign transaction implementation method.  Required to conform to `EosioSignatureProviderProtocol`.
     ///
     /// - Parameter request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference Wallet Implementation.
@@ -31,7 +105,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
     public func signTransaction(request: EosioTransactionSignatureRequest, completion: @escaping (EosioTransactionSignatureResponse) -> Void) {
 
         var payload = RequestPayload()
-        payload.request.transactionSignature = request
+        payload.request.transactionSignature = TransactionSignatureRequest(eosioTransactionSignatureRequest: request)
         payload.requireBiometric = requireBiometric
 
         EosioReferenceAuthenticatorSignatureProvider.transactionSignatureCompletions[payload.id] = completion
