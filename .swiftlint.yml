@@ -15,4 +15,5 @@ identifier_name:
     - _rawResponse
 type_name:
   excluded:
-    - EosioReferenceWalletSignatureProviderTests
+    - EosioReferenceAuthenticatorSignatureProvider
+    - EosioReferenceAuthenticatorSignatureProviderTests

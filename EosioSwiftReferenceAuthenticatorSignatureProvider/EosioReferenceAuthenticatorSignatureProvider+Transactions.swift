@@ -1,6 +1,6 @@
 //
-//  EosioReferenceWalletSignatureProvider+Transactions.swift
-//  EosioReferenceWalletSignatureProvider
+//  EosioReferenceAuthenticatorSignatureProvider+Transactions.swift
+//  EosioReferenceAuthenticatorSignatureProvider
 //
 //  Created by Todd Bowden on 11/12/18.
 //  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 import EosioSwift
 
 /// Extensions to `EosioReferenceWalletSignatureProvider` to add transaction signature functionality.
-extension EosioReferenceWalletSignatureProvider {
+extension EosioReferenceAuthenticatorSignatureProvider {
 
     /// Handle transaction signature requests in the payload.
     ///
@@ -34,7 +34,7 @@ extension EosioReferenceWalletSignatureProvider {
         payload.request.transactionSignature = request
         payload.requireBiometric = requireBiometric
 
-        EosioReferenceWalletSignatureProvider.transactionSignatureCompletions[payload.id] = completion
+        EosioReferenceAuthenticatorSignatureProvider.transactionSignatureCompletions[payload.id] = completion
 
         // check that return url is valid
         guard isValid(url: returnUrl) else {
