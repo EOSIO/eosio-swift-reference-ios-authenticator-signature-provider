@@ -1,6 +1,6 @@
 //
-//  EosioReferenceWalletSignatureProvider+SelectiveDisclosure.swift
-//  EosioReferenceWalletSignatureProvider
+//  EosioReferenceAuthenticatorSignatureProvider+SelectiveDisclosure.swift
+//  EosioReferenceAuthenticatorSignatureProvider
 //
 //  Created by Todd Bowden on 11/9/18.
 //  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 import EosioSwift
 
 /// Extensions to `EosioReferenceWalletSignatureProvider` to add selective disclosure functionality.
-extension EosioReferenceWalletSignatureProvider {
+extension EosioReferenceAuthenticatorSignatureProvider {
 
     /// Handle selective disclosures in the payload, caching data and call completion.
     ///
@@ -83,7 +83,7 @@ extension EosioReferenceWalletSignatureProvider {
         payload.returnUrl = returnUrl
         payload.declaredDomain = declaredDomain
         payload.callbackUrl = callbackUrl
-        EosioReferenceWalletSignatureProvider.selectiveDisclosureCompletions[payload.id] = completion
+        EosioReferenceAuthenticatorSignatureProvider.selectiveDisclosureCompletions[payload.id] = completion
         guard let requestHex = payload.toHex else {
             return completion(SelectiveDisclosureResponse(error: EosioError(.signatureProviderError, reason: "Unable to encode hex request")))
         }
@@ -149,7 +149,7 @@ extension EosioReferenceWalletSignatureProvider {
 
     /// Clear the authorizers in the local cache.
     public func clearAuthorizers() throws {
-        let url = try EosioReferenceWalletSignatureProvider.authorizersURL()
+        let url = try EosioReferenceAuthenticatorSignatureProvider.authorizersURL()
         try FileManager.default.removeItem(at: url)
     }
 
@@ -158,7 +158,7 @@ extension EosioReferenceWalletSignatureProvider {
     /// - Returns: `Array` of `Authorizer`.
     /// - Throws: If there is an error building the authorizers URL or decoding the cached authorizers JSON.
     public func getAuthorizers() throws -> [Authorizer] {
-        let url = try EosioReferenceWalletSignatureProvider.authorizersURL()
+        let url = try EosioReferenceAuthenticatorSignatureProvider.authorizersURL()
         let authorizersJson = try Data(contentsOf: url)
         let decoder = JSONDecoder()
         let authorizers = try decoder.decode([Authorizer].self, from: authorizersJson)
