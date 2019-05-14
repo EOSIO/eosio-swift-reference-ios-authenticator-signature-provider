@@ -1,5 +1,5 @@
 //
-//  EosioReferenceWalletSignatureProvider.swift
+//  EosioReferenceAuthenticatorSignatureProvider.swift
 //
 //  Created by Todd Bowden on 9/30/18.
 //  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
@@ -16,10 +16,10 @@ import EosioSwift
 /// + Add manifest.json file.
 /// + Add URL scheme or Universal Link.
 /// + Add URL scheme to whitelist.
-public class EosioReferenceWalletSignatureProvider: EosioSignatureProviderProtocol {
+public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProviderProtocol {
 
     /// Singleton instance of the `EosioReferenceWalletSignatureProvider`.
-    public static let shared = EosioReferenceWalletSignatureProvider()
+    public static let shared = EosioReferenceAuthenticatorSignatureProvider()
 
     /// Map of the current completion closures for transaction signatures, keyed by the incoming payload ID.
     static var transactionSignatureCompletions = [String: ((EosioTransactionSignatureResponse) -> Void)]()

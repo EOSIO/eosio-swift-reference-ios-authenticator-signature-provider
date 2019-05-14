@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EosioSwiftReferenceAuthenticatorSignatureProvider'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Signature Provider for Eosio SDK for Swift that relays transactions to the EOSIO Reference Authenticator Implementation.'
   s.homepage         = 'https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.swift_version         = '4.2'
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'EosioSwiftReferenceAuthenticatorSignatureProvider/**/*.swift'
+  s.source_files = 'EosioSwiftReferenceAuthenticatorSignatureProvider/*.swift'
 
   s.pod_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                             'CLANG_ENABLE_MODULES' => 'YES',

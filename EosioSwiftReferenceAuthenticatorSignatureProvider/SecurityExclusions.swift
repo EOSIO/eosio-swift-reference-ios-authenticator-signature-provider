@@ -1,6 +1,6 @@
 //
 //  SecurityExclusions.swift
-//  EosioReferenceWalletSignatureProvider
+//  EosioReferenceAuthenticatorSignatureProvider
 //
 //  Created by Ben Martell on 2/5/19.
 //  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
