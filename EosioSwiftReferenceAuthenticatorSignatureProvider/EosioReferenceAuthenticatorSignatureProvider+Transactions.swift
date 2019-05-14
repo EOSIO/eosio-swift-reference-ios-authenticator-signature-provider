@@ -20,12 +20,37 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         transactionSignatureCompletions[payload.id] = nil
         guard let transactionSignatureResponse = payload.response.transactionSignature else { return }
         DispatchQueue.main.async {
-            return completion(transactionSignatureResponse)
+            return completion(transactionSignatureResponse.toEosioTransactionSignatureResponse)
+        }
+    }
+
+    /// The structure for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`.
+    public struct Transaction: Codable {
+        /// The array of signatures
+        public var signatures = [String]()
+        /// The compression
+        public var compression = 0
+        /// The packed context free data
+        public var packedContextFreeData = ""
+        /// The packed trx
+        public var packedTrx = ""
+
+        /// Initializer for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`
+        /// - Parameters:
+        ///   - signatures: The array of signatures
+        ///   - compression: The compression
+        ///   - packedContextFreeData: The packed context free data
+        ///   - packedTrx: The packed trx
+        init(signatures: [String]? = nil, compression: Int? = 0, packedContextFreeData: String? = nil, packedTrx: String? = nil) {
+            self.signatures = signatures ?? [String]()
+            self.compression = compression ?? 0
+            self.packedContextFreeData = packedContextFreeData ?? ""
+            self.packedTrx = packedTrx ?? ""
         }
     }
 
     /// The transaction signature request.
-    /// Conforms to the `transactionSignature` property of the protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
+    /// Conforms to the `transactionSignature` property of the request protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
     public struct TransactionSignatureRequest: Codable {
         /// The transaction info containing any exisitng signatures, compression, packedContextFreeData and packedTrx.
         public var transaction = Transaction()
@@ -37,31 +62,6 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         public var abis = [BinaryAbi]()
         /// Should the signature provider be allowed to modify the transaction? E.g., adding an assert action. Defaults to `true`.
         public var isModificationAllowed: Bool?
-
-        /// The structure for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`.
-        public struct Transaction: Codable { // swiftlint:disable:this nesting
-            /// The array of signatures
-            public var signatures = [String]()
-            /// The compression
-            public var compression = 0
-            /// The packed context free data
-            public var packedContextFreeData = ""
-            /// The packed trx
-            public var packedTrx = ""
-
-            /// Initializer for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`
-            /// - Parameters:
-            ///   - signatures: The array of signatures
-            ///   - compression: The compression
-            ///   - packedContextFreeData: The packed context free data
-            ///   - packedTrx: The packed trx
-            init(signatures: [String]? = nil, compression: Int? = 0, packedContextFreeData: String? = nil, packedTrx: String? = nil) {
-                self.signatures = signatures ?? [String]()
-                self.compression = compression ?? 0
-                self.packedContextFreeData = packedContextFreeData ?? ""
-                self.packedTrx = packedTrx ?? ""
-            }
-        }
 
         /// The structure for `BinaryAbi`s.
         public struct BinaryAbi: Codable { // swiftlint:disable:this nesting
@@ -95,6 +95,48 @@ extension EosioReferenceAuthenticatorSignatureProvider {
             self.abis = eosioTransactionSignatureRequest.abis.map({ (abi) -> TransactionSignatureRequest.BinaryAbi in
                 return TransactionSignatureRequest.BinaryAbi(accountName: abi.accountName, abi: abi.abi)
             })
+        }
+    }
+
+    /// The structure for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse`.
+    /// Conforms to the `transactionSignature` property of the response protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
+    public struct TransactionSignatureResponse: Codable {
+        /// The signed transaction.
+        public var signedTransaction: Transaction?
+        /// An optional error.
+        public var error: EosioError?
+
+        public var toEosioTransactionSignatureResponse: EosioTransactionSignatureResponse {
+            var response = EosioTransactionSignatureResponse()
+            response.error = self.error
+            if let signatures = self.signedTransaction?.signatures, let packedTrx = self.signedTransaction?.packedTrx {
+                if let serializedTransaction = try? Data(hex: packedTrx) {
+                    var signedTransaction = EosioTransactionSignatureResponse.SignedTransaction()
+                    signedTransaction.serializedTransaction = serializedTransaction
+                    signedTransaction.signatures = signatures
+                    response.signedTransaction = signedTransaction
+                }
+            }
+            return response
+        }
+
+        /// Initializer for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse`.
+        public init() { }
+
+        /// Initializer for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse` when it contains an error.
+        ///
+        /// - Parameter error: The error as an `EosioError`.
+        public init(error: EosioError) {
+            self.error = error
+        }
+
+        /// Initializer for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse` with an `EosioTransactionSignatureResponse`
+        /// - Parameter eosioTransactionSignatureResponse: An `EosioTransactionSignatureResponse`
+        public init(eosioTransactionSignatureResponse: EosioTransactionSignatureResponse) {
+            let signatures = eosioTransactionSignatureResponse.signedTransaction?.signatures
+            let packedTrx = eosioTransactionSignatureResponse.signedTransaction?.serializedTransaction.hex
+            self.signedTransaction = Transaction(signatures: signatures, packedTrx: packedTrx)
+            self.error = eosioTransactionSignatureResponse.error
         }
     }
 
