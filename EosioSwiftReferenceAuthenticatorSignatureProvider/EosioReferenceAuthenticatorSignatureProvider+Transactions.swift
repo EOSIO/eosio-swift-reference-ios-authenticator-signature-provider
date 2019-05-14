@@ -36,7 +36,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         /// An array of `BinaryAbi`s sent along so that signature providers can display transaction information to the user.
         public var abis = [BinaryAbi]()
         /// Should the signature provider be allowed to modify the transaction? E.g., adding an assert action. Defaults to `true`.
-        public var isModificationAllowed = true
+        public var isModificationAllowed: Bool?
 
         /// The structure for `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureRequest.Transaction`.
         public struct Transaction: Codable { // swiftlint:disable:this nesting
