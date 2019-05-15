@@ -30,6 +30,25 @@ public struct SecurityExclusions: Codable {
     /// If true, the authenticator may allow for parsing of non-compliant Ricardian contracts.
     public var relaxedContractParsing = false
 
+    enum CodingKeys: String, CodingKey {
+        case addAssertToTransactions
+        case appMetadataIntegrity
+        case domainMatch
+        case whitelistedActions
+        case iconIntegrity
+        case relaxedContractParsing
+    }
+
     public init() { }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        addAssertToTransactions = try container.decodeIfPresent(Bool.self, forKey: .addAssertToTransactions) ?? false
+        appMetadataIntegrity = try container.decodeIfPresent(Bool.self, forKey: .appMetadataIntegrity) ?? false
+        domainMatch = try container.decodeIfPresent(Bool.self, forKey: .domainMatch) ?? false
+        whitelistedActions = try container.decodeIfPresent(Bool.self, forKey: .whitelistedActions) ?? false
+        iconIntegrity = try container.decodeIfPresent(Bool.self, forKey: .iconIntegrity) ?? false
+        relaxedContractParsing = try container.decodeIfPresent(Bool.self, forKey: .relaxedContractParsing) ?? false
+    }
 
 }
