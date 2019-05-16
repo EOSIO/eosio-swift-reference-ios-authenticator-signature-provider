@@ -1,30 +1,32 @@
-# EOSIO SDK for Swift: iOS Reference authenticator/signature provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
+![Swift Logo](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/raw/master/img/swift-logo.png)
+# EOSIO SDK for Swift: Reference iOS Authenticator Signature Provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/EOSIO/eosio-swift/blob/master/LICENSE)
 [![Swift 4.2](https://img.shields.io/badge/Language-Swift_4.2-orange.svg)](https://swift.org)
 ![](https://img.shields.io/badge/Deployment%20Target-iOS%2011-blue.svg)
 
-The Signature Provider abstraction is arguably the most useful of all of the [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) providers. It is responsible for:
+EOSIO Reference iOS Authenticator Signature Provider is a pluggable signature provider for [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift). It allows for signing transactions using the [EOSIO Reference iOS Authenticator App](https://github.com/EOSIO/eosio-reference-ios-authenticator-app).
 
-* finding out what keys are available for signing (`getAvailableKeys`), and
-* requesting and obtaining transaction signatures with a subset of the available keys (`signTransaction`).
-
-By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature from keys in the platform's Keychain or Secure Enclave? Configure the `EosioTransaction` with a conforming signature provider that exposes that functionality. Need signatures from a wallet on the user's device? A signature provider can do that too!
-
-All signature providers must conform to the [EosioSignatureProviderProtocol](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioSignatureProviderProtocol/EosioSignatureProviderProtocol.swift) Protocol.
-
-
-
-*All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.*
+_All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them._
 
 ## Contents
+- [About Signature Providers](#about-signature-providers)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
 - [Want to Help?](#want-to-help)
 - [License & Legal](#license)
 
-## Prerequisites
+## About Signature Providers
+The Signature Provider abstraction is arguably the most useful of all of the [EOSIO SDK for Swift](https://github.com/EOSIO/eosio-swift) providers. It is responsible for:
 
+* finding out what keys are available for signing (`getAvailableKeys`), and
+* requesting and obtaining transaction signatures with a subset of the available keys (`signTransaction`).
+
+By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature directly from keys in the platform's Keychain or Secure Enclave? Configure the `EosioTransaction` with a conforming signature provider that exposes that functionality, such as the [EOSIO SDK for Swift: Vault Signature Provider](https://github.com/EOSIO/eosio-swift-vault-signature-provider). Need signatures from a wallet on the user's device? This signature provider demonstrates that functionality.
+
+All signature providers must conform to the [EosioSignatureProviderProtocol](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioSignatureProviderProtocol/EosioSignatureProviderProtocol.swift) Protocol.
+
+## Prerequisites
 * Xcode 10 or higher
 * CocoaPods 1.5.3 or higher
 * For iOS, iOS 11+
@@ -37,22 +39,21 @@ This reference authenticator/signature provider has [EOSIO SDK for Swift](https:
 3. Run `pod install`
 4. Open newly created file `EosioSwiftReferenceAuthenticatorSignatureProvider.xcworkspace`
 
-## Basic Usage
+## Basic Usage !!! REVAMP
+Kick off a signature request from EOSIO Reference iOS Authenticator App by calling `signTransaction`.
 
-Kick off a signature request from Reference Authenticator Implementation App by calling `signTransaction`.
-It will use [deep link](https://developer.apple.com/ios/universal-links/) communication channel to activate the Reference Authenticator Implementation App and pass the transaction details.
+It will use deep link communication channel to activate the Reference Authenticator Implementation App and pass the transaction details.
 Once the transaction is signed by Reference Authenticator Implementation App, it will kick back to your app and pass the transaction with signature(s).
 You just need to listen to it at `didFinishLaunchingWithOptions` of your `AppDelegate` and consume it.
-![Diagram](Img/diagram.png)
+
+![Diagram](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/raw/master/img/diagram.png)
 
 **Note:** When you try to request signatues for the first time, the flow will be a little different. Your app will display a `selective disclosure` to the user asking for permission to request public keys from the Reference Authenticator Implementation app.
 
 ## Want to help?
-
-Interested in contributing? That's awesome! Here are some [Contribution Guidelines](./CONTRIBUTING.md) and the [Code of Conduct](./CONTRIBUTING.md#conduct).
+Interested in contributing? That's great! Here are some [Contribution Guidelines](./CONTRIBUTING.md) and the [Code of Conduct](./CONTRIBUTING.md#conduct).
 
 ## License
-
 [MIT](./LICENSE)
 
 ## Important
