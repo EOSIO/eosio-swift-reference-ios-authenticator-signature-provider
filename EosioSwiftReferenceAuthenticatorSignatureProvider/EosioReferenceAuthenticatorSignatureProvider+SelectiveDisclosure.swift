@@ -83,6 +83,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         payload.returnUrl = returnUrl
         payload.declaredDomain = declaredDomain
         payload.callbackUrl = callbackUrl
+        payload.securityExclusions = securityExclusions
         EosioReferenceAuthenticatorSignatureProvider.selectiveDisclosureCompletions[payload.id] = completion
         guard let requestHex = payload.toHex else {
             return completion(SelectiveDisclosureResponse(error: EosioError(.signatureProviderError, reason: "Unable to encode hex request")))
