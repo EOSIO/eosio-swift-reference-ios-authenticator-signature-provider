@@ -1,0 +1,68 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider+SelectiveDisclosure.swift",
+      "line": 41,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.Disclosure.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider+SelectiveDisclosure.swift",
+      "line": 60,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.SelectiveDisclosureResponse.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider+SelectiveDisclosure.swift",
+      "line": 62,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.SelectiveDisclosureResponse.init(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider+SelectiveDisclosure.swift",
+      "line": 72,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.Authorizer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider+Transactions.swift",
+      "line": 109,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse.toEosioTransactionSignatureResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider.swift",
+      "line": 102,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.RequestPayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider.swift",
+      "line": 140,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.ResponsePayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/EosioReferenceAuthenticatorSignatureProvider.swift",
+      "line": 157,
+      "symbol": "EosioReferenceAuthenticatorSignatureProvider.ResponsePayload.init(id:transactionSignatureResponse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift",
+      "line": 42,
+      "symbol": "SecurityExclusions.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/brandonfancher/Projects/Work/eosio-swift-repos/eosio-swift-reference-ios-authenticator-signature-provider"
+}
