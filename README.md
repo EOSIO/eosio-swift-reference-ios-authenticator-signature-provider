@@ -14,6 +14,7 @@ _All product and company names are trademarks™ or registered® trademarks of t
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Direct Usage](#direct-usage)
+- [Architecture](#architecture)
 - [Documentation](#documentation)
 - [Library Methods](#library-methods)
 - [Want to Help?](#want-to-help)
@@ -59,7 +60,61 @@ Now Reference iOS Authenticator Signature Provider is ready for use within EOSIO
 
 ## Direct Usage
 
-Generally, signature providers are called by [`EosioTransaction`](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioTransaction/EosioTransaction.swift) during signing. ([See an example here.](https://github.com/EOSIO/eosio-swift#basic-usage)) If you find, however, that you need to get available keys or request signing directly, this library can be invoked as follows:
+Generally, signature providers are called by [`EosioTransaction`](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioTransaction/EosioTransaction.swift) during signing. ([See a generic example here.](https://github.com/EOSIO/eosio-swift#basic-usage)).  To specifically use Reference iOS Authenticator Signature Provider in `EosioTransaction` you can follow the example below:
+
+```swift
+let from = "User1"
+let to = "User2"
+var amount = "10 EOS"
+let memo = "Memo"
+
+let transaction = EosioTransaction()
+transaction.rpcProvider = EosioRpcProvider(endpoint: URL(string: "https://my.blockchain.domain")!)
+transaction.serializationProvider = EosioAbieosSerializationProvider()
+        
+let eosioAppSignatureProvider = EosioReferenceAuthenticatorSignatureProvider.shared
+eosioAppSignatureProvider.returnUrl = "myappurl://"
+eosioAppSignatureProvider.declaredDomain = "myapp.domain.com"
+
+// Optional, set security exclusions if testing or debugging
+if let theSecurityExclusions = self.securityExclusions {
+    eosioAppSignatureProvider.securityExclusions = theSecurityExclusions
+}
+
+transaction.signatureProvider = eosioAppSignatureProvider
+        
+let action = try! EosioTransaction.Action(
+    account: EosioName("eosio.token"),
+    name: EosioName("transfer"),
+        authorization: [EosioTransaction.Action.Authorization(
+        actor: EosioName(from),
+        permission: EosioName("active"))
+      	 ],
+    data: Transfer(
+        from: EosioName(from),
+        to: EosioName(to),
+        quantity: amount,
+        memo: memo)
+)
+transaction.add(action: action)        
+        
+transaction.signAndBroadcast { (result) in
+    print(try! transaction.toJson(prettyPrinted: true))
+    switch result {
+    case .failure (let error):
+        print("Error = \(error)")
+        self.showAlert(title: error.errorCode.rawValue, message: "\(error.localizedDescription)", dismiss: "Sorry :(")
+    case .success:
+        if let transactionId = transaction.transactionId {
+            print("SUCCESS!!!!!!")
+            self.showAlert(title: "SUCCESS!!!!!!", message: "TransactionId: \(transactionId)", dismiss: "OK :)")
+            print(transactionId)
+        }
+    }
+}
+```
+
+If you find, however, that you need to get available keys or request signing directly, this library can be invoked as follows:
 
 ```swift
 let eosioAppSignatureProvider = EosioReferenceAuthenticatorSignatureProvider.shared
@@ -103,6 +158,8 @@ eosioAppSignatureProvider.signTransaction(request: signRequest) { (response) in
     ...
 }
 ```
+
+## Architecture 
 
 Reference iOS Authenticator Signature Provider will use deep link communication channel to activate the EOSIO Reference iOS Authenticator App and pass the transaction details.
 Once the transaction is signed by EOSIO Reference iOS Authenticator App, it will call back to your app using the return URL scheme configured in Reference iOS Authenticator Signature Provider and pass the `EosioAvailableKeysResponse` or `EosioTransactionSignatureResponse`.
