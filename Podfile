@@ -1,10 +1,5 @@
 using_local_pods = false
 
-unless using_local_pods
-  source 'https://github.com/EOSIO/eosio-swift-pod-specs.git'
-  source 'https://github.com/CocoaPods/Specs.git'
-end
-
 platform :ios, '11.0'
 
 # ignore all warnings from all pods
@@ -28,12 +23,12 @@ else
   target 'EosioSwiftReferenceAuthenticatorSignatureProvider' do
     use_frameworks!
 
-    pod 'EosioSwift', '~> 0.1.0'
+    pod 'EosioSwift', '~> 0.1.1'
     pod 'SwiftLint'
 
     target 'EosioSwiftReferenceAuthenticatorSignatureProviderTests' do
       inherit! :search_paths
-      pod 'EosioSwift', '~> 0.1.0'
+      pod 'EosioSwift', '~> 0.1.1'
     end
   end
 end
