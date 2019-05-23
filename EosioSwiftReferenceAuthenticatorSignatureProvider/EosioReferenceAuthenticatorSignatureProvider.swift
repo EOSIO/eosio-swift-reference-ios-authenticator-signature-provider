@@ -69,7 +69,7 @@ public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProvide
     /// The incoming request structure to handle.
     public struct Request: Codable {
         /// If set, the incoming request is a transaction signature request.
-        public var transactionSignature: EosioTransactionSignatureRequest?
+        public var transactionSignature: TransactionSignatureRequest?
         /// If set, the incoming request is a selective disclosure request.
         public var selectiveDisclosure: SelectiveDisclosureRequest?
     }
@@ -117,7 +117,7 @@ public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProvide
     /// Returned response structure for processed request.
     public struct Response: Codable {
         /// If set, the returned response is a transaction signature response.
-        public var transactionSignature: EosioTransactionSignatureResponse?
+        public var transactionSignature: TransactionSignatureResponse?
         /// If set, the returned response is a selective disclosure response.
         public var selectiveDisclosure: SelectiveDisclosureResponse?
     }
@@ -156,7 +156,7 @@ public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProvide
 
         public init(id: String, transactionSignatureResponse: EosioTransactionSignatureResponse) {
             self.id = id
-            self.response.transactionSignature = transactionSignatureResponse
+            self.response.transactionSignature = TransactionSignatureResponse(eosioTransactionSignatureResponse: transactionSignatureResponse)
         }
 
     }

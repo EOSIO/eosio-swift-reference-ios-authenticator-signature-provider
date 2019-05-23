@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EosioSwiftReferenceAuthenticatorSignatureProvider'
-  s.version          = '0.0.2'
-  s.summary          = 'Signature Provider for Eosio SDK for Swift that relays transactions to the EOSIO Reference Authenticator Implementation.'
+  s.version          = '0.1.0'
+  s.summary          = 'Signature Provider for EOSIO SDK for Swift that relays transactions to the EOSIO Reference Authenticator iOS App.'
   s.homepage         = 'https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
                            Copyright (c) 2017-2019 block.one and its contributors.  All rights reserved.
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
                             'SWIFT_COMPILATION_MODE' => 'wholemodule',
                             'ENABLE_BITCODE' => 'YES' }
 
-  s.ios.dependency 'EosioSwift', '~> 0.1.0'
+  s.ios.dependency 'EosioSwift', '~> 0.1.1'
 end
