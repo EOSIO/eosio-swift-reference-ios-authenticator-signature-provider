@@ -10,7 +10,7 @@ import UIKit
 import EosioSwift
 
 /// Signature provider for EOSIO SDK for Swift that provides selective disclosure and transaction signing using the
-/// EOSIO Reference Wallet Implementation.  Conforms to `EosioSignatureProviderProtocol`.
+/// EOSIO Reference iOS Authenticator App.  Conforms to `EosioSignatureProviderProtocol`.
 ///
 /// Requirements for developers.
 /// + Add manifest.json file.
@@ -18,7 +18,7 @@ import EosioSwift
 /// + Add URL scheme to whitelist.
 public class EosioReferenceAuthenticatorSignatureProvider: EosioSignatureProviderProtocol {
 
-    /// Singleton instance of the `EosioReferenceWalletSignatureProvider`.
+    /// Singleton instance of the `EosioReferenceAuthenticatorSignatureProvider`.
     public static let shared = EosioReferenceAuthenticatorSignatureProvider()
 
     /// Map of the current completion closures for transaction signatures, keyed by the incoming payload ID.

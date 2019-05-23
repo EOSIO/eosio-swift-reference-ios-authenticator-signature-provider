@@ -9,7 +9,7 @@
 import Foundation
 import EosioSwift
 
-/// Extensions to `EosioReferenceWalletSignatureProvider` to add selective disclosure functionality.
+/// Extensions to `EosioReferenceAuthenticatorSignatureProvider` to add selective disclosure functionality.
 extension EosioReferenceAuthenticatorSignatureProvider {
 
     /// Handle selective disclosures in the payload, caching data and call completion.
@@ -72,10 +72,10 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         public init() { }
     }
 
-    /// Request selective disclosure from the EOSIO Reference Wallet Implementation.
-    /// Opens the EOSIO Reference Wallet Implementation and asks the user for permission.
+    /// Request selective disclosure from the EOSIO Reference iOS Authenticator App.
+    /// Opens the EOSIO Reference iOS Authenticator App and asks the user for permission.
     ///
-    /// - Parameter request: The `SelectiveDisclosureRequest` being sent to the EOSIO Reference Wallet Implementation.
+    /// - Parameter request: The `SelectiveDisclosureRequest` being sent to the EOSIO Reference iOS Authenticator App.
     /// - Parameter completion: The completion closure to be called with the `SelectiveDisclosureResponse`.
     public func requestSelectiveDisclosure(_ request: SelectiveDisclosureRequest, completion: @escaping (SelectiveDisclosureResponse) -> Void) {
         var payload = RequestPayload()
@@ -120,8 +120,8 @@ extension EosioReferenceAuthenticatorSignatureProvider {
         }
     }
 
-    /// Request authorizers from the EOSIO Reference Wallet Implementation.
-    /// Opens the EOSIO Reference Wallet Implementation and asks the user for permission.
+    /// Request authorizers from the EOSIO Reference iOS Authenticator App.
+    /// Opens the EOSIO Reference iOS Authenticator App and asks the user for permission.
     ///
     /// - Parameter completion: The completion closure to be called with the `SelectiveDisclosureResponse`.
     public func requestAuthorizers(completion: @escaping (SelectiveDisclosureResponse) -> Void) {
@@ -131,7 +131,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
     }
 
     /// Returns the cache of the last `requestAuthorizers` call if present.  Otherwise, requests authorizers from the
-    /// EOSIO Reference Wallet Implementation.
+    /// EOSIO Reference iOS Authenticator App.
     /// - Remark: In the future, updated authorizers could be retrieved from a server with a token returned from
     /// the last `requestAuthorizers` call.  Updated authorizers can also be included with each transaction response.
     ///

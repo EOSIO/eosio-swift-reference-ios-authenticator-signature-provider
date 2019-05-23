@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for EosioReferenceWalletSignatureProvider.
-FOUNDATION_EXPORT double EosioReferenceWalletSignatureProviderVersionNumber;
+//! Project version number for EosioReferenceAuthenticatorSignatureProvider.
+FOUNDATION_EXPORT double EosioReferenceAuthenticatorSignatureProviderVersionNumber;
 
-//! Project version string for EosioReferenceWalletSignatureProvider.
-FOUNDATION_EXPORT const unsigned char EosioReferenceWalletSignatureProviderVersionString[];
+//! Project version string for EosioReferenceAuthenticatorSignatureProvider.
+FOUNDATION_EXPORT const unsigned char EosioReferenceAuthenticatorSignatureProviderVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <EosioReferenceWalletSignatureProvider/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <EosioReferenceAuthenticatorSignatureProvider/PublicHeader.h>

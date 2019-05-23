@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SecurityExclusions Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/SecurityExclusions" class="dashAnchor"></a>
+
+    <a title="SecurityExclusions Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          EosioSwiftReferenceAuthenticatorSignatureProvider Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">EosioSwiftReferenceAuthenticatorSignatureProvider Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      SecurityExclusions Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider.html">EosioReferenceAuthenticatorSignatureProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/Request.html">– Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/RequestPayload.html">– RequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/ResponsePayload.html">– ResponsePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/SelectiveDisclosureType.html">– SelectiveDisclosureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/Disclosure.html">– Disclosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/SelectiveDisclosureRequest.html">– SelectiveDisclosureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/SelectiveDisclosureResponse.html">– SelectiveDisclosureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/Authorizer.html">– Authorizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/Transaction.html">– Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/TransactionSignatureRequest.html">– TransactionSignatureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EosioReferenceAuthenticatorSignatureProvider/TransactionSignatureResponse.html">– TransactionSignatureResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SecurityExclusions.html">SecurityExclusions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>SecurityExclusions</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SecurityExclusions</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Struct to define what security exclusions that the developer is willing to relax for testing.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Exclusions relax the built in security of the system and are not recommended for production use.
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV23addAssertToTransactionsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/addAssertToTransactions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV23addAssertToTransactionsSbvp">addAssertToTransactions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may skip adding assert actions to the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">addAssertToTransactions</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L16">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV20appMetadataIntegritySbvp"></a>
+                    <a name="//apple_ref/swift/Property/appMetadataIntegrity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV20appMetadataIntegritySbvp">appMetadataIntegrity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may skip chain manifest and app metadata integrity checks.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appMetadataIntegrity</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L19">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV11domainMatchSbvp"></a>
+                    <a name="//apple_ref/swift/Property/domainMatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV11domainMatchSbvp">domainMatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may not enforce the same-origin policy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">domainMatch</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L22">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV18whitelistedActionsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/whitelistedActions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV18whitelistedActionsSbvp">whitelistedActions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may allow signing of non-manifest-whitelisted actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">whitelistedActions</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV13iconIntegritySbvp"></a>
+                    <a name="//apple_ref/swift/Property/iconIntegrity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV13iconIntegritySbvp">iconIntegrity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may skip app-, action-, and/or chain-icon integrity checks.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">iconIntegrity</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L28">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV22relaxedContractParsingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/relaxedContractParsing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsV22relaxedContractParsingSbvp">relaxedContractParsing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If true, the authenticator may allow for parsing of non-compliant Ricardian contracts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">relaxedContractParsing</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsVACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:49EosioSwiftReferenceAuthenticatorSignatureProvider18SecurityExclusionsVACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/tree/master/EosioSwiftReferenceAuthenticatorSignatureProvider/SecurityExclusions.swift#L44-L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
