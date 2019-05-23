@@ -116,7 +116,7 @@
                 </div>
               </div>
             <p>Signature provider for EOSIO SDK for Swift that provides selective disclosure and transaction signing using the
-EOSIO Reference Wallet Implementation.  Conforms to <code>EosioSignatureProviderProtocol</code>.</p>
+EOSIO Reference iOS Authenticator App.  Conforms to <code>EosioSignatureProviderProtocol</code>.</p>
 
 <p>Requirements for developers.</p>
 
@@ -146,7 +146,7 @@ EOSIO Reference Wallet Implementation.  Conforms to <code>EosioSignatureProvider
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Singleton instance of the <code>EosioReferenceWalletSignatureProvider</code>.</p>
+                        <p>Singleton instance of the <code>EosioReferenceAuthenticatorSignatureProvider</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,8 +796,8 @@ EOSIO Reference Wallet Implementation.  Conforms to <code>EosioSignatureProvider
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Request selective disclosure from the EOSIO Reference Wallet Implementation.
-Opens the EOSIO Reference Wallet Implementation and asks the user for permission.</p>
+                        <p>Request selective disclosure from the EOSIO Reference iOS Authenticator App.
+Opens the EOSIO Reference iOS Authenticator App and asks the user for permission.</p>
 
                       </div>
                       <div class="declaration">
@@ -820,7 +820,7 @@ Opens the EOSIO Reference Wallet Implementation and asks the user for permission
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../Classes/EosioReferenceAuthenticatorSignatureProvider/SelectiveDisclosureRequest.html">SelectiveDisclosureRequest</a></code> being sent to the EOSIO Reference Wallet Implementation.</p>
+                                  <p>The <code><a href="../Classes/EosioReferenceAuthenticatorSignatureProvider/SelectiveDisclosureRequest.html">SelectiveDisclosureRequest</a></code> being sent to the EOSIO Reference iOS Authenticator App.</p>
                                 </div>
                               </td>
                             </tr>
@@ -907,8 +907,8 @@ Opens the EOSIO Reference Wallet Implementation and asks the user for permission
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Request authorizers from the EOSIO Reference Wallet Implementation.
-Opens the EOSIO Reference Wallet Implementation and asks the user for permission.</p>
+                        <p>Request authorizers from the EOSIO Reference iOS Authenticator App.
+Opens the EOSIO Reference iOS Authenticator App and asks the user for permission.</p>
 
                       </div>
                       <div class="declaration">
@@ -958,7 +958,7 @@ Opens the EOSIO Reference Wallet Implementation and asks the user for permission
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the cache of the last <code>requestAuthorizers</code> call if present.  Otherwise, requests authorizers from the
-EOSIO Reference Wallet Implementation.</p>
+EOSIO Reference iOS Authenticator App.</p>
 <div class="aside aside-remark">
     <p class="aside-title">Remark</p>
     <p>In the future, updated authorizers could be retrieved from a server with a token returned from
@@ -1245,7 +1245,7 @@ Conforms to the <code>transactionSignature</code> property of the response proto
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code>EosioTransactionSignatureRequest</code> being sent to the EOSIO Reference Wallet Implementation.</p>
+                                  <p>The <code>EosioTransactionSignatureRequest</code> being sent to the EOSIO Reference iOS Authenticator App.</p>
                                 </div>
                               </td>
                             </tr>

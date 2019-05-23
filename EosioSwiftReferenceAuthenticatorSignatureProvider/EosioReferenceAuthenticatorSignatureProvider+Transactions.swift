@@ -9,7 +9,7 @@
 import Foundation
 import EosioSwift
 
-/// Extensions to `EosioReferenceWalletSignatureProvider` to add transaction signature functionality.
+/// Extensions to `EosioReferenceAuthenticatorSignatureProvider` to add transaction signature functionality.
 extension EosioReferenceAuthenticatorSignatureProvider {
 
     /// Handle transaction signature requests in the payload.
@@ -142,7 +142,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
 
     /// Sign transaction implementation method.  Required to conform to `EosioSignatureProviderProtocol`.
     ///
-    /// - Parameter request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference Wallet Implementation.
+    /// - Parameter request: The `EosioTransactionSignatureRequest` being sent to the EOSIO Reference iOS Authenticator App.
     /// - Parameter completion: The completion closure to be called with the `EosioTransactionSignatureResponse`.
     public func signTransaction(request: EosioTransactionSignatureRequest, completion: @escaping (EosioTransactionSignatureResponse) -> Void) {
 
