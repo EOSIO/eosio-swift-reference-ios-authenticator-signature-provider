@@ -71,7 +71,7 @@ let memo = "Memo"
 let transaction = EosioTransaction()
 transaction.rpcProvider = EosioRpcProvider(endpoint: URL(string: "https://my.blockchain.domain")!)
 transaction.serializationProvider = EosioAbieosSerializationProvider()
-        
+
 let eosioAppSignatureProvider = EosioReferenceAuthenticatorSignatureProvider.shared
 eosioAppSignatureProvider.returnUrl = "myappurl://"
 eosioAppSignatureProvider.declaredDomain = "myapp.domain.com"
@@ -82,7 +82,7 @@ if let theSecurityExclusions = self.securityExclusions {
 }
 
 transaction.signatureProvider = eosioAppSignatureProvider
-        
+
 let action = try! EosioTransaction.Action(
     account: EosioName("eosio.token"),
     name: EosioName("transfer"),
@@ -96,8 +96,8 @@ let action = try! EosioTransaction.Action(
         quantity: amount,
         memo: memo)
 )
-transaction.add(action: action)        
-        
+transaction.add(action: action)
+
 transaction.signAndBroadcast { (result) in
     print(try! transaction.toJson(prettyPrinted: true))
     switch result {
@@ -121,8 +121,8 @@ let eosioAppSignatureProvider = EosioReferenceAuthenticatorSignatureProvider.sha
 eosioAppSignatureProvider.returnUrl = "myappurl://"
 eosioAppSignatureProvider.declaredDomain = "myapp.domain.com"
 
-// Initialize security exclusions and set if desired.  Optional.        
-if let theSecurityExclusions = self.securityExclusions {    
+// Initialize security exclusions and set if desired.  Optional.
+if let theSecurityExclusions = self.securityExclusions {
     eosioAppSignatureProvider.securityExclusions = theSecurityExclusions
 }
 
@@ -144,8 +144,8 @@ let eosioAppSignatureProvider = EosioReferenceAuthenticatorSignatureProvider.sha
 eosioAppSignatureProvider.returnUrl = "myappurl://"
 eosioAppSignatureProvider.declaredDomain = "myapp.domain.com"
 
-// Initialize security exclusions and set if desired.  Optional.        
-if let theSecurityExclusions = self.securityExclusions {    
+// Initialize security exclusions and set if desired.  Optional.
+if let theSecurityExclusions = self.securityExclusions {
     eosioAppSignatureProvider.securityExclusions = theSecurityExclusions
 }
 
@@ -159,7 +159,7 @@ eosioAppSignatureProvider.signTransaction(request: signRequest) { (response) in
 }
 ```
 
-## Architecture 
+## Architecture
 
 Reference iOS Authenticator Signature Provider will use deep link communication channel to activate the EOSIO Reference iOS Authenticator App and pass the transaction details.
 Once the transaction is signed by EOSIO Reference iOS Authenticator App, it will call back to your app using the return URL scheme configured in Reference iOS Authenticator Signature Provider and pass the `EosioAvailableKeysResponse` or `EosioTransactionSignatureResponse`.
@@ -195,7 +195,7 @@ EosioSwiftReferenceAuthenticatorSignatureProvider is implemented as a singleton.
 * Set the declared domain for matching, if you have not already done so.  ```eosioAppSignatureProvider.declaredDomain = "myapp.domain.com"```
 * Optionally, pass any security exclusions you wish to set if you are doing development and testing.  ```eosioAppSignatureProvider.securityExclusions = mySecurityExclusions```.
 
-Other functions included with Reference iOS Authenticator Signature Provider will assist you in handling, decoding and validating incoming URL responses from EOSIO Reference iOS Authenticator App.  
+Other functions included with Reference iOS Authenticator Signature Provider will assist you in handling, decoding and validating incoming URL responses from EOSIO Reference iOS Authenticator App.
 
 ## Want to help?
 Interested in contributing? That's great! Here are some [Contribution Guidelines](./CONTRIBUTING.md) and the [Code of Conduct](./CONTRIBUTING.md#conduct).
