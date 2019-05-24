@@ -50,7 +50,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
     }
 
     /// The transaction signature request.
-    /// Conforms to the `transactionSignature` property of the request protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
+    /// Conforms to the `transactionSignature` property of the request protocol at: https://github.com/EOSIO/eosio-authentication-transport-protocol-spec
     public struct TransactionSignatureRequest: Codable {
         /// The transaction info containing any exisitng signatures, compression, packedContextFreeData and packedTrx.
         public var transaction = Transaction()
@@ -99,7 +99,7 @@ extension EosioReferenceAuthenticatorSignatureProvider {
     }
 
     /// The structure for the `EosioReferenceAuthenticatorSignatureProvider.TransactionSignatureResponse`.
-    /// Conforms to the `transactionSignature` property of the response protocol at: https://github.com/EOSIO/internal-eosio-authentication-transport-protocol-spec
+    /// Conforms to the `transactionSignature` property of the response protocol at: https://github.com/EOSIO/eosio-authentication-transport-protocol-spec
     public struct TransactionSignatureResponse: Codable {
         /// The signed transaction.
         public var signedTransaction: Transaction?
