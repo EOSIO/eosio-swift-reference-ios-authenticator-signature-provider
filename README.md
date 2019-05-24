@@ -179,6 +179,8 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 
 Please refer to the generated code documentation at the [GitHub repository](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider) or by cloning this repo and opening the `docs/index.html` file in your browser.
 
+Please refer to the generated code documentation at https://eosio.github.io/eosio-swift-reference-ios-authenticator-signature-provider or by cloning this repo and opening the docs/index.html file in your browser.
+
 ## Library Methods
 
 This library is an implementation of [`EosioSignatureProviderProtocol`](https://github.com/EOSIO/eosio-swift/blob/master/EosioSwift/EosioSignatureProviderProtocol/EosioSignatureProviderProtocol.swift). It implements the following protocol methods:
