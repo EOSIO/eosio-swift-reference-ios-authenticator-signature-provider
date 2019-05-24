@@ -166,7 +166,7 @@ Reference iOS Authenticator Signature Provider uses the [Deep Link URL Query Str
 
 EOSIO Reference iOS Authenticator App sends responses to the requesting app via the `EosioReferenceAuthenticatorSignatureProvider.returnUrl`. Responses take the form of an `EosioAvailableKeysResponse` or an `EosioTransactionSignatureResponse`.
 
- All of this conforms to and is facilitated by the [EOSIO Authentication Transport Protocol Specification](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec).
+ All of this is facilitated by the [EOSIO Authentication Transport Protocol Specification](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec).
 
 ![Diagram](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/raw/master/img/diagram.png)
 
