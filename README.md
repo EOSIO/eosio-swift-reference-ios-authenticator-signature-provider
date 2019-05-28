@@ -1,5 +1,6 @@
 ![Swift Logo](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/raw/master/img/swift-logo.png)
-# EOSIO SDK for Swift: Reference iOS Authenticator Signature Provider ![EOSIO Alpha](https://img.shields.io/badge/EOSIO-Alpha-blue.svg)
+# EOSIO SDK for Swift: Reference iOS Authenticator Signature Provider ![EOSIO Labs](https://img.shields.io/badge/EOSIO-Labs-5cb3ff.svg)
+
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider/blob/master/LICENSE)
 [![Swift 4.2](https://img.shields.io/badge/Language-Swift_4.2-orange.svg)](https://swift.org)
 ![](https://img.shields.io/badge/Deployment%20Target-iOS%2011-blue.svg)
@@ -9,6 +10,10 @@ Reference iOS Authenticator Signature Provider is a pluggable signature provider
 Inter-application communication conforms to and is facilitated by the [EOSIO Authentication Transport Protocol Specification](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec).
 
 _All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them._
+
+## About EOSIO Labs
+
+EOSIO Labs repositories are experimental.  Developers in the community are encouraged to use EOSIO Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
 
 ## Contents
 - [About Signature Providers](#about-signature-providers)
