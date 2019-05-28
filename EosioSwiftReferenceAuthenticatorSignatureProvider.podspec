@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EosioSwiftReferenceAuthenticatorSignatureProvider'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Signature Provider for EOSIO SDK for Swift that relays transactions to the EOSIO Reference Authenticator iOS App.'
   s.homepage         = 'https://github.com/EOSIO/eosio-swift-reference-ios-authenticator-signature-provider'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
